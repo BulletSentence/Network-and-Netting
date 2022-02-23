@@ -26,7 +26,7 @@ def run(server_class=HTTPServer, handler_class=S, port=27000):
     server_address = ('', port)
     httpd = server_class(server_address, handler_class)
     logging.info('Iniciando\n')
-    logging.info('http://127.0.0.1:' + str(port) + '\n')
+    logging.info('http://192.168.0.103:' + str(port) + '\n')
     try:
         httpd.serve_forever()
     except KeyboardInterrupt:

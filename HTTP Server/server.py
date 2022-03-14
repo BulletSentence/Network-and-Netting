@@ -21,7 +21,6 @@ class RequestHandler(BaseHTTPRequestHandler):
         except IOError:
             self.send_error(404, "Não foi encontrado um arquivo de HTML")
 
-
 def run():
     server_address = ('127.0.0.1', 8080)
     httpd = HTTPServer(server_address, RequestHandler)
